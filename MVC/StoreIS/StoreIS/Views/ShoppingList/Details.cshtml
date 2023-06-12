@@ -1,0 +1,33 @@
+﻿@using StoreIS.Models.ShoppingList
+@model ShopingListDetailsViewModel
+
+<div>
+	<input id="listId" type="hidden" value="@Model.Id" />
+	<h1>@Model.Name</h1>
+	<p>@Model.CreatedAt</p>
+	<a class="btn bg-warning" asp-controller="ShoppingList" asp-action="Edit" asp-route-id="@Model.Id">Edit List</a>
+	<a class="btn btn-danger" asp-controller="ShoppingList" asp-action="DeleteList" asp-route-id="@Model.Id">Delete List</a>
+</div>
+<div class="wrapper">
+	@foreach (var product in Model.Products)
+	{
+		<div class="card" style="width: 18rem;">
+			<div class="img-wrapper">
+				<img class="card-img-top" src="data:image;base64,@product.Image" />
+			</div>
+			<div class="card-body">
+				<p class="card-title">@product.Name</p>
+				<p class="card-text">@product.Price lv.</p>
+				@if (!product.IsPurchased)
+				{
+					<a class="btn btn-warning" id="buy" href="javascript:void(0)" data-id="@product.Id">Purchased</a>
+				}
+				else
+				{
+					<button disabled class="btn btn-success">Purchased <i class="fas fa-check-circle"></i></button>
+				}
+			</div>
+
+		</div>
+	}
+</div>

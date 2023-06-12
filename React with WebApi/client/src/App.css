@@ -1,0 +1,6 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+body{
+  background: rgb(128,228,227);
+    background: linear-gradient(117deg, rgba(128,228,227,1) 0%, rgba(112,244,227,1) 57%, rgba(71,235,197,1) 20%);
+}

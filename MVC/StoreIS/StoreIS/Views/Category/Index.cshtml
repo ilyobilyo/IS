@@ -1,0 +1,14 @@
+﻿@using StoreIS.Models.Category
+@model IEnumerable<CategoryViewModel>
+
+<ul class="category-ul">
+	@foreach (var category in Model)
+	{
+		<li>
+			<a  class="btn btn-info" asp-controller="Product" asp-action="All" asp-route-categoryId="@category.Id" >@category.Name</a>
+			<a  class="btn btn-outline-warning" asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id">Edit <i class="fas fa-edit"></i></a>
+		</li>
+	}
+</ul>
+
+<a asp-controller="Category" class="btn btn-info create-cat" asp-action="Create">Create Category <i class="fas fa-plus-circle"></i></a>

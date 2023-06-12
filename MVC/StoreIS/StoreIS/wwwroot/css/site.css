@@ -1,0 +1,120 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+#hidden {
+    display: none;
+    margin-bottom: 5%;
+}
+
+#hidden select{
+    width: 50%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+    #hidden a {
+        width: 40%;
+        display: inline-block;
+        margin-bottom: 1%;
+        font-size: 0.9rem;
+    }
+
+.index-msg {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+    flex-direction: column;
+    gap: 20px;
+    height: 15rem;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.list-home {
+    width: 50%;
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.category-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+    .category-ul li a {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+.create-cat {
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+
+.btn {
+    transition: 1s;
+}
+
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.img-wrapper{
+    height: 12rem;
+}
+
+    .wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top:2%;
+}

@@ -1,0 +1,34 @@
+.createForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    background: rgb(128,222,228);
+background: linear-gradient(117deg, rgba(128,222,228,1) 0%, rgba(165,239,247,1) 43%, rgba(130,215,250,1) 60%);
+    width: 30%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 2% 3%;
+}
+
+.inputContainer {
+    width: 50%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inputContainer label {
+    width: 40%;
+}
+
+.inputContainer input {
+    width: 50%;
+}
+
+.inputContainer select {
+    width: 50%;
+}

@@ -1,0 +1,10 @@
+﻿@using StoreIS.Models.Category
+@model CreateCategoryViewModel
+
+<form id="createCategory" method="post">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<label>Category Name</label>
+	<input asp-for="Name" type="text" name="name" />
+
+	<button type="submit" class="btn btn-info" href="/">Create <i class="fas fa-plus-circle"></i></button>
+</form>

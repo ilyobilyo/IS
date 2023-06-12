@@ -1,0 +1,97 @@
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    gap: 30px;
+}
+
+.item{
+    width: 28%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 1px solid #aa8a8a;
+    overflow: hidden;
+    padding-bottom: 2%;
+}
+
+.imageContainer{
+    width: 100%;
+    height: 15rem;
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.info p{
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.info button{
+    background-color: rgb(181, 181, 252);
+    border: 1px solid rgb(181, 181, 252);
+    border-radius: 8px;
+    padding: 1% 4%;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.searchForm{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.searchForm select{
+    width: 50%;
+    height: 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn{
+    background-color: rgb(181, 181, 252);
+    border: 1px solid rgb(181, 181, 252);
+    border-radius: 8px;
+    padding: 1% 4%;
+    margin: auto;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

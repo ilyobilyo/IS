@@ -1,0 +1,31 @@
+﻿@using StoreIS.Models.Product
+@model AllProductViewModel
+
+<div class="categories">
+	@foreach (var category in Model.Categories)
+	{
+		<a class="btn btn-primary" asp-controller="Product" asp-action="All" asp-route-categoryId="@category.Id">@category.Name</a>
+	}
+</div>
+
+<div class="wrapper">
+	@foreach (var product in Model.Products)
+	{
+		<div class="card" style="width: 18rem;">
+			<div class="img-wrapper">
+				<img class="card-img-top" src="data:image;base64,@product.Image" />
+			</div>
+			<div class="card-body">
+				<p class="card-title">@product.Name</p>
+				<p class="card-text">@product.Price lv.</p>
+				<a class="btn btn-warning" asp-controller="Product" asp-action="Edit" asp-route-productId="@product.Id">Edit</a>
+				<a class="btn btn-success" id="chooseList" href="javascript:void(0)">Choose list</a>
+			</div>
+			<div id="hidden">
+				<select class="form-select" id="hiddenLists"></select>
+				<a class="btn btn-success" id="addList" href="javascript:void(0)" data-id="@product.Id">Add to list <i class="fas fa-cart-plus"></i></a>
+			</div>
+		</div>
+	}
+</div>
+

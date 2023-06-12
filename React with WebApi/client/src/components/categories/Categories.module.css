@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 50%;
+    margin: auto;
+    padding: 2% 0;
+    height: 15rem;
+}
+
+.create {
+    width: 70%;
+    text-align: center;
+}
+
+.create a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.categories a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(5, 170, 5);
+    border: 1px solid rgb(81, 241, 129);
+    border-radius: 8px;
+    padding: 1% 4%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-size: 1.5rem;
+    width: 25%;
+}
+
