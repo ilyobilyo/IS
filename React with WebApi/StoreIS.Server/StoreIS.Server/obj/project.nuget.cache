@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OqCv4aEt8YZ6YpzYXTHY3HLZmagnP5CYfJkRG/wTziQB3B62QzhZDlDgVE6pH+OyMdO9eIaqkS0fwntjpik7rw==",
+  "dgSpecHash": "VdBXfge7OqMpveCi+hR+B4MDrknJdacLGMLFVrfFkXzFNGj2RYU2Z030nY1YTzTOtnl4ldLZX1PsumT0MNLNRQ==",
   "success": true,
-  "projectFilePath": "D:\\SoftUni\\Is\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
+  "projectFilePath": "D:\\SoftUni\\ISTASK\\IS\\React with WebApi\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iliyan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\iliyan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

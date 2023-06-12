@@ -62,8 +62,12 @@ export const CartProvider = ({ children }) => {
         setCarts([]);
     }
 
+    const deleteCart = (cartName) => {
+        setCarts(state => state.filter(x => x.name !== cartName));
+    }
+
     return (
-        <CartContext.Provider value={{ carts, createCart, addProduct, buyProduct, clearCarts }}>
+        <CartContext.Provider value={{ carts, createCart, addProduct, buyProduct, clearCarts, deleteCart }}>
             {children}
         </CartContext.Provider>
     )

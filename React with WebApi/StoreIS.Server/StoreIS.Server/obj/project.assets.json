@@ -2954,11 +2954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftUni\\Is\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
+      "projectUniqueName": "D:\\SoftUni\\ISTASK\\IS\\React with WebApi\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
       "projectName": "StoreIS.Server",
-      "projectPath": "D:\\SoftUni\\Is\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
+      "projectPath": "D:\\SoftUni\\ISTASK\\IS\\React with WebApi\\StoreIS.Server\\StoreIS.Server\\StoreIS.Server.csproj",
       "packagesPath": "C:\\Users\\iliyan\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftUni\\Is\\StoreIS.Server\\StoreIS.Server\\obj\\",
+      "outputPath": "D:\\SoftUni\\ISTASK\\IS\\React with WebApi\\StoreIS.Server\\StoreIS.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iliyan\\AppData\\Roaming\\NuGet\\NuGet.Config",

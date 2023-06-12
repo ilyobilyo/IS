@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from 'react'
 import * as productService from '../../services/productService'
 import { ProductCard } from './product-card/ProductCard'
 import { CategoryContext } from '../../contexts/CategoryContext'
+import { AuthContext } from '../../contexts/AuthContext'
 
 export const Products = () => {
     const { categoryId } = useParams();
@@ -12,6 +13,7 @@ export const Products = () => {
         categoryId: ''
     })
     const { categories } = useContext(CategoryContext)
+    const { isAuthenticated } = useContext(AuthContext)
 
     useEffect(() => {
         if (categoryId) {
@@ -63,7 +65,9 @@ export const Products = () => {
                     <button className={styles.btn}>Search</button>
                 </form>
 
-                <Link className={styles.btn} to="/createProduct">Create Product</Link>
+                {isAuthenticated &&
+                    <Link className={styles.btn} to="/createProduct">Create Product</Link>
+                }
             </div>
             <div className={styles.wrapper}>
                 {products && products.map(x => <ProductCard key={x.id} product={x} />)}

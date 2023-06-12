@@ -16,6 +16,7 @@ import { CartProvider } from './contexts/CartContext';
 import { Cart } from './components/cart/Cart';
 import { EditProduct } from './components/products/edit-product/EditProduct';
 import { EditCategory } from './components/categories/edit-category/EditCategory';
+import { PrivateGuard } from './components/private-guard/PrivateGuard';
 
 function App() {
   return (
@@ -29,19 +30,21 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/register' element={<Register />} />
               <Route path='/login' element={<Login />} />
-              <Route path='/logout' element={<Logout />} />
 
               <Route path='/products' element={<Products />} />
               <Route path='/products/:categoryId' element={<Products />} />
-              <Route path='/createProduct' element={<CreateProduct />} />
-              <Route path='/products/edit/:productId' element={<EditProduct />} />
 
               <Route path='/categories' element={<Categories />} />
-              <Route path='/createCategory' element={<CreateCategory />} />
-              <Route path='/categories/edit/:categoryId' element={<EditCategory />} />
 
-              <Route path='/createCart' element={<CreateCart />} />
-              <Route path='/cart/:cartName' element={<Cart />} />
+              <Route element={<PrivateGuard />}>
+                <Route path='/logout' element={<Logout />} />
+                <Route path='/createProduct' element={<CreateProduct />} />
+                <Route path='/products/edit/:productId' element={<EditProduct />} />
+                <Route path='/createCategory' element={<CreateCategory />} />
+                <Route path='/categories/edit/:categoryId' element={<EditCategory />} />
+                <Route path='/createCart' element={<CreateCart />} />
+                <Route path='/cart/:cartName' element={<Cart />} />
+              </Route>
             </Routes>
           </CartProvider>
         </CategoryProvider>
